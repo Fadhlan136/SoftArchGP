@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="feedback-page">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">HealthHub</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nutrition.html">Nutrient</a></li>
+                    <li><a href="Plan.html">Plan</a></li>
+                    <li><a href="maps.html">Maps</a></li>
+                    <li><a href="ExerciseFinderApi.html">Exercise</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="feedback-container container">
+            <div class="feedback-form">
+                <h1>Submit a Review</h1>
+                <p>We are here to assist you. Feel free to reach out!</p>
+                <form id="review-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="E.g. yourname@example.com">
+
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+
+                    <label for="reviewText">Review:</label>
+                    <textarea id="reviewText" name="reviewText" placeholder="Write your review here..."></textarea>
+
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+            <div class="feedback-image">
+                <img src="cs.png" alt="Customer Service">
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2024 Fitness Tracker. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </footer>
+    </body>
+</html>

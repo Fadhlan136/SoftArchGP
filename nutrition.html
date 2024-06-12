@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="nutrition.js"></script>
+        <title>Nutrition Analysis</title>
+    </head>
+    <body class="nutrition">
+         <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">HealthHub</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nutrition.html">Nutrient</a></li>
+                    <li><a href="Plan.html">Plan</a></li>
+                    <li><a href="maps.html">Maps</a></li>
+                    <li><a href="ExerciseFinderApi.html">Exercise</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h1>Nutrition Analysis</h1>
+            <table>
+                <tr>
+                    <td><label for="foodInput">Enter a food item:</label></td>
+                    <td><input type="text" id="foodInput"></td>
+                    <td><h4><a>**</a>(Ex : 100g of apple)</h4></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><button onclick="analyze()">Analyze</button></td>
+                    <td></td>
+                </tr>
+           
+                <tr>
+                    <td></td>
+                    <td><div id="results"></div></td>
+                    <td></td>
+                </tr>
+             </table>
+        </div>
+    </body>
+    <br>
+    <footer class="footer">
+            <p>&copy; 2024 Fitness Tracker. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</html>

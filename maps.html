@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maps</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxYc9ihsxaHouFuCBfxQK_9kp_28dc0mo&libraries=places"></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">HealthHub</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nutrition.html">Nutrient</a></li>
+                    <li><a href="Plan.html">Plan</a></li>
+                    <li><a href="maps.html">Maps</a></li>
+                    <li><a href="ExerciseFinderApi.html">Exercise</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Find Gyms and Recreation Areas</h1>
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input id="location" type="text" placeholder="Enter a location">
+            </div>
+            <div class="button-container">
+                <button class="btn" id="current-location-btn">Use Current Location</button>
+            </div>
+            <fieldset>
+                <legend>Map and Search Options</legend>
+                <div class="place-type-buttons">
+                    <button class="search-button" data-placeType="gym">Gyms</button>
+                    <button class="search-button" data-placeType="park">Parks</button>
+                    <button class="search-button" data-placeType="recreation_area">Recreation Areas</button>
+                    <button class="search-button" data-placeType="yoga_studio">Yoga Studios</button>
+                    <button class="search-button" data-placeType="swimming_pool">Swimming Pools</button>
+                </div>
+                <div id="map"></div>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Recommended Places</legend>
+                <br>
+                <div id="places"></div>
+            </fieldset>
+        </div>
+        <br>
+        <br>
+        <footer class="footer">
+            <p>&copy; 2024 Fitness Tracker. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </footer>
+    </body>
+</html>
